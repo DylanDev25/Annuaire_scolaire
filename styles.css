@@ -1,0 +1,483 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    flex-direction: column;
+}
+
+/* Container styles */
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* Logo styles */
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Title styles */
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Description styles */
+.description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #004494;
+}
+
+/* FontAwesome icon margin */
+.fa {
+    margin-right: 8px;
+}
+
+/* Footer styles */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: #FFFF;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire de connexion styles */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour le message d'erreur */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+
+/* For desktop screens (PC fixes) - large screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+        padding: 60px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+}
+
+/* For laptops (PC portables) - medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 500px;
+        padding: 50px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 14px 28px;
+        font-size: 17px;
+    }
+}
+
+/* For tablets - small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 400px;
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* Formulaire d'inscription */
+.register-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+  
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-form input,
+.register-form select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    background: #f9f9f9;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.register-form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Conteneur du mot de passe */
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="password"] {
+    padding-right: 40px;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Conteneur du numéro de téléphone */
+.telephone-container {
+    display: flex;
+    gap: 10px;
+}
+
+.telephone-container select {
+    flex: 1;
+}
+
+.telephone-container input {
+    flex: 2;
+}
+
+/* Messages de feedback */
+.message {
+    font-size: 14px;
+    color: #e74c3c; /* Erreur */
+    margin-top: 10px;
+}
+
+.message.success {
+    color: #5bc0de; /* Succès */
+}
+
+/* Ajout d'un peu plus de style pour les éléments généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container, .register-container {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Responsive pour s'adapter aux différents écrans */
+@media (max-width: 767px) {
+    .register-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .register-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust the size of the logo as needed */
+}
+
+#navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar-menu li {
+    margin: 0;
+}
+
+#navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#navbar-menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    #navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    #navbar-menu.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+
+    #navbar-menu li {
+        margin: 0;
+    }
+
+    #navbar-menu a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        border-top: 1px solid #444;
+    }
+}
